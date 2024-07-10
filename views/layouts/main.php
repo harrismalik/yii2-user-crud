@@ -74,12 +74,6 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     </div>
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; mharrismalik</p>
-    </div>
-</footer>
-
 <?php $this->endBody() ?>
 </body>
 </html>

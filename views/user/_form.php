@@ -23,7 +23,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'status')->textInput() ?>
 
-    <?= $form->field($model, 'password_hash')->passwordInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'password_hash')->passwordInput(['maxlength' => true])->label('Password') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

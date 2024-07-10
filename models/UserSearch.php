@@ -34,14 +34,16 @@ class UserSearch extends User
             return $dataProvider;
         }
 
+        // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
             'status' => $this->status,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
         ]);
 
         $query->andFilterWhere(['like', 'username', $this->username])
-            ->andFilterWhere(['like', 'email', $this->email])
-            ->andFilterWhere(['like', 'role', $this->role]);
+              ->andFilterWhere(['like', 'email', $this->email]);
 
         return $dataProvider;
     }
